@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserSetup</class>
+ <widget class="QWidget" name="UserSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>490</width>
+    <height>390</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>490</width>
+    <height>390</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*局部样式表*/
+QPushButton#headimg_Btn{
+	border:noe;
+	border: 1px solid black;
+	border-radius:4px;
+}
+
+QPushButton#headimg_Btn:hover{
+	border: 1px solid blue;
+}
+
+QComboBox#sex_Box{
+	border: 1px solid black;
+	color:#4A7D7D;
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(245, 245, 245,0.4);
+}
+
+QComboBox#sex_Box:hover{
+	background-color: rgb(85, 255, 127);
+}
+
+QComboBox#sex_Box::drop-down{
+	border-image: url(:/new/icons/icons/becurrent/arrow-down.png);
+}
+
+QComboBox#sex_Box::drop-down:hover{
+	border-image: url(:/new/icons/icons/becurrent/arrow-down-blue.png);
+}
+
+QLineEdit#userName_Edit{
+	border: 1px solid black;
+	color:#4A7D7D;
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(250, 250, 250,0.8);
+}
+
+QLineEdit#userName_Edit:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QLineEdit#userSign_Edit{
+	border: 1px solid black;
+	color:#4A7D7D;
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(250, 250, 250,0.8);
+}
+
+QLineEdit#userSign_Edit:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton#determine_Btn{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgba(250, 250, 250,0.8);
+	font:normal 18px &quot;楷体&quot;;
+	color: rgb(0, 0, 0);
+}
+
+QPushButton#determine_Btn:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QGroupBox#port_Box{
+	border: 1px solid red;
+}
+
+QGroupBox#receivePort_Box{
+	border: 1px solid red;
+}
+
+QGroupBox#IP_Box{
+	border: 1px solid red;
+}
+
+QGroupBox#Number_Box{
+	border: 1px solid red;
+}
+
+QPushButton#addfriend_Btn{
+	border:noe;
+	image: url(:/new/icons/icons/becurrent/addfriend.png);
+}
+
+QPushButton#addfriend_Btn:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+</string>
+  </property>
+  <widget class="QPushButton" name="headimg_Btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sex_Box">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>60</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>25</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>男</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>女</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="userSign_Edit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>470</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>470</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>470</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="placeholderText">
+    <string>个性签名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userName_Edit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>300</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="placeholderText">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="IP_Box">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>300</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>IPv4地址</string>
+   </property>
+   <widget class="QLabel" name="IP_Lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>280</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>IPv4地址</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="port_Box">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>220</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>220</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>220</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>传输端口</string>
+   </property>
+   <widget class="QLabel" name="port_Lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>200</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>18080</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="determine_Btn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>310</y>
+     <width>150</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Number_Box">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>190</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>190</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>账号</string>
+   </property>
+   <widget class="QLabel" name="Number_Lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>170</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>170</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>170</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>账号</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="receivePort_Box">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>230</y>
+     <width>220</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>220</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>220</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>接收端口</string>
+   </property>
+   <widget class="QLabel" name="receivePort_Lab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>200</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>28080</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

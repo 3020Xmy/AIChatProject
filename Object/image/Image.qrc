@@ -1,0 +1,97 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>icons/becurrent/close.png</file>
+        <file>icons/becurrent/minus.png</file>
+        <file>icons/becurrent/QQ_Logo.png</file>
+        <file>icons/becurrent/setting.png</file>
+        <file>icons/becurrent/security.png</file>
+        <file>icons/becurrent/arrow-down.png</file>
+        <file>icons/becurrent/arrow-down-blue.png</file>
+        <file>icons/becurrent/arrow-up-bold.png</file>
+        <file>icons/becurrent/search.png</file>
+        <file>icons/becurrent/qqicon_p_blue.png</file>
+        <file>icons/becurrent/qqicon_p_gray.png</file>
+        <file>icons/becurrent/qqicon_q_blue.png</file>
+        <file>icons/becurrent/qqicon_q_gray.png</file>
+        <file>icons/becurrent/emotion.png</file>
+        <file>icons/becurrent/file.png</file>
+        <file>icons/becurrent/1.png</file>
+        <file>icons/becurrent/2.png</file>
+        <file>icons/becurrent/3.png</file>
+        <file>icons/becurrent/4.png</file>
+        <file>icons/becurrent/Ai.png</file>
+        <file>icons/becurrent/Ai2.png</file>
+        <file>icons/becurrent/addfriend.png</file>
+        <file>icons/becurrent/record.png</file>
+        <file>icons/becurrent/Img.png</file>
+        <file>icons/becurrent/fileinfo.png</file>
+    </qresource>
+    <qresource prefix="/new/logo">
+        <file>icons/logo/Top.gif</file>
+        <file>icons/logo/Register_Img.gif</file>
+        <file>icons/logo/addWidget.gif</file>
+    </qresource>
+    <qresource prefix="/new/user">
+        <file>user/My.jpg</file>
+        <file>user/touxiang01.jpg</file>
+        <file>user/touxiang02.jpg</file>
+        <file>user/Ai_Logn.png</file>
+        <file>user/headImg_1.jpg</file>
+        <file>user/headImg_2.jpg</file>
+        <file>user/headImg_3.jpg</file>
+        <file>user/headImg_4.jpg</file>
+        <file>user/headImg_5.jpg</file>
+        <file>user/headImg_6.jpg</file>
+        <file>user/headImg_7.jpg</file>
+        <file>user/headImg_8.jpg</file>
+    </qresource>
+    <qresource prefix="/new/weather">
+        <file>user/headImg_1.jpg</file>
+        <file>user/headImg_2.jpg</file>
+        <file>user/headImg_3.jpg</file>
+        <file>user/headImg_4.jpg</file>
+        <file>user/headImg_5.jpg</file>
+        <file>user/headImg_6.jpg</file>
+        <file>user/headImg_7.jpg</file>
+        <file>user/headImg_8.jpg</file>
+    </qresource>
+    <qresource prefix="/new/Chat">
+        <file>icons/Chat/logo_Show.png</file>
+        <file>icons/Chat/logo_Show2.png</file>
+    </qresource>
+    <qresource prefix="/new/qss">
+        <file>qssFile/scrollbar.qss</file>
+    </qresource>
+    <qresource prefix="/new/Emotion">
+        <file>icons/Emotion/lab_1.png</file>
+        <file>icons/Emotion/lab_2.png</file>
+        <file>icons/Emotion/lab_3.png</file>
+        <file>icons/Emotion/lab_4.png</file>
+        <file>icons/Emotion/lab_5.png</file>
+        <file>icons/Emotion/lab_6.png</file>
+        <file>icons/Emotion/lab_7.png</file>
+        <file>icons/Emotion/lab_8.png</file>
+        <file>icons/Emotion/lab_9.png</file>
+        <file>icons/Emotion/lab_10.png</file>
+        <file>icons/Emotion/lab_11.png</file>
+        <file>icons/Emotion/lab_12.png</file>
+        <file>icons/Emotion/lab_13.png</file>
+        <file>icons/Emotion/lab_14.png</file>
+        <file>icons/Emotion/lab_15.png</file>
+        <file>icons/Emotion/lab_16.png</file>
+        <file>icons/Emotion/lab_17.png</file>
+        <file>icons/Emotion/lab_18.png</file>
+        <file>icons/Emotion/lab_19.png</file>
+        <file>icons/Emotion/lab_20.png</file>
+        <file>icons/Emotion/lab_21.png</file>
+        <file>icons/Emotion/lab_22.png</file>
+        <file>icons/Emotion/lab_23.png</file>
+        <file>icons/Emotion/lab_24.png</file>
+        <file>icons/Emotion/lab_25.png</file>
+        <file>icons/Emotion/lab_26.png</file>
+        <file>icons/Emotion/lab_27.png</file>
+        <file>icons/Emotion/lab_28.png</file>
+        <file>icons/Emotion/lab_29.png</file>
+        <file>icons/Emotion/lab_30.png</file>
+    </qresource>
+</RCC>

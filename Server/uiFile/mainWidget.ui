@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWidget</class>
+ <widget class="QWidget" name="mainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Top局部样式表*/
+QWidget#top_Widget{
+	border:1px solid rgb(149, 149, 149);
+}
+
+QPushButton#userinfo_But{
+	border:1px solid rgb(85, 255, 0);
+}
+
+QPushButton#userinfo_But:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton#sqlinfo_But{
+	border:1px solid rgb(85, 255, 0);
+}
+
+QPushButton#sqlinfo_But:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton#groupinfo_But:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton#groupinfo_But{
+	border:1px solid rgb(85, 255, 0);
+}
+
+QPushButton#fileinfo_But:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton#fileinfo_But{
+	border:1px solid rgb(85, 255, 0);
+}
+
+QPushButton#setup_But{
+	border:1px solid rgb(85, 255, 0);
+}
+
+QPushButton#setup_But:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+/*middle局部样式表*/
+QWidget#middle_Widget{
+	border:1px solid rgb(149, 149, 149);
+}
+
+QLabel{
+	border:1px solid rgb(149, 149, 149);
+}
+
+/*bottom局部样式表*/
+QWidget#bottom_Widget{
+	border:1px solid rgb(149, 149, 149);
+}</string>
+  </property>
+  <widget class="QWidget" name="top_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*Top局部样式表*/
+QPushButton#reduce_Btn{
+	border:noe;
+	url(:/becurrent/becurrent/minus.png);
+}
+
+QPushButton#reduce_Btn:hover{
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton#clos_Btn{
+		border:noe;
+		url(:/becurrent/becurrent/close.png)
+}
+
+QPushButton#clos_Btn:hover{
+	background-color: rgb(217, 217, 217);
+}</string>
+   </property>
+   <widget class="QPushButton" name="userinfo_But">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>用户在线消息</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_1">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>3</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="groupinfo_But">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>5</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>群聊消息</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>3</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fileinfo_But">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>5</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>文件转发消息</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>3</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sqlinfo_But">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>5</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>数据库消息</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>3</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="setup_But">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>5</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>设置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clos_Btn">
+    <property name="geometry">
+     <rect>
+      <x>765</x>
+      <y>5</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../image/icons.qrc">
+      <normaloff>:/becurrent/becurrent/close.png</normaloff>:/becurrent/becurrent/close.png</iconset>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reduce_Btn">
+    <property name="geometry">
+     <rect>
+      <x>735</x>
+      <y>5</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../image/icons.qrc">
+      <normaloff>:/becurrent/becurrent/minus.png</normaloff>:/becurrent/becurrent/minus.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="bottom_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>800</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>480</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>480</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="middle_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>800</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>80</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>服务端IPv4地址：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>数据库IPv4地址：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>服务端端口：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="port_lab">
+      <property name="text">
+       <string>13020</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>数据库端口：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="SqlPort_lab">
+      <property name="text">
+       <string>3360</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="TcpIpv4_Box">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QComboBox" name="SqlIpv4_Box">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>127.0.0.1</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image/icons.qrc">
+         <normaloff>:/becurrent/becurrent/IPdizhi_1.png</normaloff>:/becurrent/becurrent/IPdizhi_1.png</iconset>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../image/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

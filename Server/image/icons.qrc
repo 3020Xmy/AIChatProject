@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/becurrent">
+        <file>becurrent/close.png</file>
+        <file>becurrent/minus.png</file>
+        <file>becurrent/IPdizhi_1.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserInfo</class>
+ <widget class="QWidget" name="UserInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>285</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>285</width>
+    <height>645</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>285</width>
+    <height>645</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*全局样式表*/
+QPushButton{
+	border:noe;
+}
+
+/*指定样式表*/
+QWidget#Top{	
+	background-color:	rgb(22, 154, 218);
+}
+
+QWidget#Middle{
+	background-color: rgb(255, 255, 255);
+}
+
+QWidget#Bottom{
+	background-color: 	rgb(196, 229, 246);
+}
+
+QPushButton#reduce_Btn{
+	image: url(:/new/icons/icons/becurrent/minus.png);
+}
+
+QPushButton#reduce_Btn:hover{
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton#setup_Btn{
+	image: url(:/new/icons/icons/becurrent/setting.png);
+}
+
+QPushButton#setup_Btn:hover{
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton#addfriend_Btn{
+	border:noe;
+	image: url(:/new/icons/icons/becurrent/addfriend.png);
+}
+
+QPushButton#addfriend_Btn:hover{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton#clos_Btn{
+	image: url(:/new/icons/icons/becurrent/close.png);
+}
+
+QPushButton#clos_Btn:hover{
+	background-color: rgb(255, 0, 0);
+}
+
+QLabel#userHead_Lab{
+	border-radius:4px;
+	border:1px solid rgb(255, 255, 255);
+}
+
+QGroupBox#info_Box{
+	border: 1px solid rgb(0, 255, 127);
+}
+
+QGroupBox#sign_Box{
+	border: 1px solid rgb(0, 255, 127);
+}
+
+/*Bottom组件样式表*/
+QLabel#friend_Lab{
+	image: url(:/new/icons/icons/becurrent/qqicon_p_gray.png);
+}
+
+QLabel#group_Lab{
+	image: url(:/new/icons/icons/becurrent/qqicon_q_gray.png);
+}
+
+QLabel#Ai_Lab{
+	image: url(:/new/icons/icons/becurrent/Ai.png);
+}
+
+QLabel#friend_Lab:hover{
+	image: url(:/new/icons/icons/becurrent/qqicon_p_blue.png);
+}
+
+QLabel#group_Lab:hover{
+	image: url(:/new/icons/icons/becurrent/qqicon_q_blue.png);
+}
+
+QLabel#Ai_Lab:hover{
+	image: url(:/new/icons/icons/becurrent/Ai2.png);
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="Top" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>155</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>285</width>
+       <height>155</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="reduce_Btn">
+      <property name="geometry">
+       <rect>
+        <x>243</x>
+        <y>0</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clos_Btn">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>0</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="userHead_Lab">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>35</y>
+        <width>80</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setup_Btn">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="info_Box">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>130</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>用户名</string>
+      </property>
+      <widget class="QLabel" name="userName_Lab">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>85</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>85</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>用户名</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="sign_Box">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>170</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>170</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>170</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>个性签名</string>
+      </property>
+      <widget class="QLabel" name="userSign_Lab">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>150</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>个性签名</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="userNumber_Lab">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>账号</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addfriend_Btn">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>50</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="Middle" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>441</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>285</width>
+       <height>441</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="Bottom" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>49</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>285</width>
+       <height>49</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="friend_Lab">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>9</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="group_Lab">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>9</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Ai_Lab">
+      <property name="geometry">
+       <rect>
+        <x>232</x>
+        <y>9</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

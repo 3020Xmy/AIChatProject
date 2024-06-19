@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QWidget" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*全局样式表*/
+QWidget#Register{
+	background-color: rgb(85, 255, 255);
+}
+
+QPushButton{
+	border:noe;
+}
+
+/*局部样式表*/
+QLabel#top_Lab_2{
+	background-color: rgba(255, 255, 255,0);
+}
+
+QLabel#top_Lab{
+	background-color: rgba(255, 255, 255,0);
+}
+
+QLineEdit#number_Edit{
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(245, 245, 245,0.4);
+}
+
+QLineEdit#number_Edit:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QLineEdit#password_Edit{
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(245, 245, 245,0.4);
+}
+
+QLineEdit#password_Edit:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton#register_Btn{
+	border-radius:5px;
+	background-color: rgb(0, 170, 255);
+	font:normal 18px &quot;黑体&quot;;
+	color:rgb(255, 255, 255);
+}
+
+QPushButton#register_Btn:hover{
+	background-color: rgb(0, 85, 255);
+}
+
+QPushButton#reduce_Btn{
+	image:url(:/new/icons/icons/becurrent/minus.png);
+}
+
+QPushButton#clos_Btn{
+	image: url(:/new/icons/icons/becurrent/close.png);
+}
+
+QPushButton#reduce_Btn:hover{
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton#clos_Btn:hover{
+	background-color: rgb(255, 0, 0);
+}
+
+QLineEdit#name_Edit{
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(245, 245, 245,0.4);
+}
+
+QLineEdit#name_Edit:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QComboBox#sex_Box{
+	color:#4A7D7D;
+	font:normal 20px 黑体;
+	border-radius:4px;
+	background-color: rgba(245, 245, 245,0.4);
+}
+
+QComboBox#sex_Box:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QComboBox#sex_Box::drop-down{
+	border-image: url(:/new/icons/icons/becurrent/arrow-down.png);
+}
+
+QComboBox#sex_Box::drop-down:hover{
+	border-image: url(:/new/icons/icons/becurrent/arrow-down-blue.png);
+}
+
+QPushButton#headimg_Btn{
+	border: 1px solid black;
+	border-radius:4px;
+}
+
+QPushButton#headimg_Btn:hover{
+	border: 1px solid blue;
+}</string>
+  </property>
+  <widget class="QLabel" name="backimg_Lab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>330</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>330</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="number_Edit">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>150</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="placeholderText">
+    <string>账号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password_Edit">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>210</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="placeholderText">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="register_Btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>265</y>
+     <width>360</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>360</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>360</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>立即注册</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clos_Btn">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reduce_Btn">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name_Edit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>135</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>135</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>135</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="maxLength">
+    <number>15</number>
+   </property>
+   <property name="placeholderText">
+    <string>昵称</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sex_Box">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>210</y>
+     <width>135</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>135</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>135</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="placeholderText">
+    <string>性别</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>男</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>女</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="headimg_Btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>93</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择头像</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="top_Lab">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>31</y>
+     <width>270</width>
+     <height>63</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>270</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>38</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>欢迎注册</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="top_Lab_2">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>104</y>
+     <width>224</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>每一天，乐在沟通</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
