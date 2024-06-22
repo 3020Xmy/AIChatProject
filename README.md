@@ -105,18 +105,11 @@ int TcpThread::handle_EncryptResult(const QJsonObject &jsonObject)
 其中函数命名使用驼峰法，并且注释中带有函数参数以及默认返回值int，方便后续对异常的捕获进行诊断
 
 
-## 客户端运行示例
+## 运行示例
 <p align="center">
-    <img src ="README_IMG\1.png"/>
-    <img src ="README_IMG\2.png"/>
-    <img src ="README_IMG\3.png"/>
-    <img src ="README_IMG\4.png"/>
+    <img src ="README_IMG\1.gif"/>
 </p>
 
-## 服务端运行示例
-<p align="center">
-    <img src ="README_IMG\5.png"/>
-</p>
 
 ## 作者留言
 个人博客：wild-pointer.top
